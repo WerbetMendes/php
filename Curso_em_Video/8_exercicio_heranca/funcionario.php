@@ -1,10 +1,12 @@
 <?php
-class Funcionario {
+require_once "pessoa.php";
+
+class Funcionario extends Pessoa {
     private $setor;
     private $trabalhando;
 
     public function mudarTrabalho() {
-
+        $this->trabalhando = ! $this->trabalhando;
     }
     public function getSetor() {
         return $this->setor;

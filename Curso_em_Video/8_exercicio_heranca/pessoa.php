@@ -5,7 +5,7 @@ class Pessoa {
     private $sexo;
 
     public function fazerAniv() {
-
+        $this->idade ++;
     }
     public function getNome() {
         return $this->nome;

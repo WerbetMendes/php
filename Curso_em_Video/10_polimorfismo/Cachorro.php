@@ -1,5 +1,5 @@
 <?php
-include_once "Mamifero.php ";
+include_once "Mamifero.php";
 class Cachorro extends Mamifero {
     private $corPelo;
 

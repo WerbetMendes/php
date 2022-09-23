@@ -5,8 +5,15 @@ abstract class Pessoa {
     protected $sexo;
     protected $experiencia;
 
-    protected function ganharExp() {
-
+    public function __construct($nome, $idade, $sexo) {
+        $this->nome = $nome;
+        $this->idade = $idade;
+        $this->sexo = $sexo;
+        $this->experiencia = 0;
+    }
+   
+    protected function ganharExp($n) {
+        $this->experiencia += $n;
     }
     public function getNome() {
         return $this->nome;

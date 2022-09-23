@@ -11,10 +11,7 @@ $v[2] = new Video("Trabalhando com Polimorfismo em PHP.");
 print_r($v);
 
 
-
-
-
-$g1 = new Gafanhoto();
+$g1 = new Gafanhoto("Werbet", 39, "M", "sonyUnder");
 print_r($g1);
 
 

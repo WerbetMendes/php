@@ -2,8 +2,53 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+    padding: 20px;
+}
+
+header img {
+    width: 50px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+
+header a:hover{
+    color: #999;
 }
 
 body {
-    background-color: rgb(76, 128, 174)
+    background-color: rgb(188, 185, 185);
 }
+
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 50px 0;
+}
+
+
+

@@ -1,3 +1,14 @@
 .navbar-brand img{
     width: 50px;
 }
+body {
+    background-color: blueviolet;
+}
+#main-title {
+    text-align: center;
+    margin: 15px 0 30px;
+}
+
+i .fas fa-eye check-icon {
+    color: green;
+}

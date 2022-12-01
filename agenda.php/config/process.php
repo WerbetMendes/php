@@ -5,7 +5,9 @@
     include_once("connection.php");
     include_once("url.php");
 
-    $query = "SELECT * FROM Contacts";
+    $contacts = [];
+
+    $query = "SELECT * FROM contacts";
 
     $stmt = $conn->prepare($query);
 

@@ -9,7 +9,6 @@ if(isset($_SESSION['msg'])) {
     $_SESSION['msg'] = '';
 }
 
-
 ?>
 
 <!DOCTYPE html>

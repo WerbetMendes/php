@@ -1,3 +1,4 @@
+
 .navbar-brand img{
     width: 50px;
 }
@@ -45,6 +46,10 @@
     color: #BD2130;
 }
 
+.delete-form {
+    display: inline-block;
+}
+
 .delete-btn {
     background-color: transparent;
     border: none;
@@ -66,3 +71,62 @@
     margin-top: 30px;
 }
 
+
+/* SHOW / CONTATO INDIVIDUAL */
+#view-contact-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.back-link-container {
+    display: block;
+    font-weight: bold;
+    margin: 30px auto 0;
+}
+
+#back-link{
+    text-decoration: none;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    color: #007BFF;
+    padding: 5px;
+}
+
+#back-link:hover {
+    color: white;
+    background-color: #007BFF;
+}
+
+/* CREATE */
+.form-group {
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #3695fa;
+}
+
+#create-form,
+#edit-form {
+    max-width: 500px;
+    margin: 0 auto;
+    
+} 
+
+/* MOBILE */
+@media(max-width: 480px) {
+    #home-link {
+        display: none;
+    }
+}

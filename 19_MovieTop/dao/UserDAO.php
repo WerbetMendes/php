@@ -107,6 +107,8 @@
                     $data = $stmt->fetch();
                     $user = $this->buildUser($data);
 
+                    return $user;
+
                 } else {
                     return false;
                 }
@@ -134,6 +136,8 @@
 
                     $data = $stmt->fetch();
                     $user = $this->buildUser($data);
+
+                    return $user;
 
                 } else {
                     return false;

@@ -43,7 +43,7 @@
 
             $stmt->execute();
 
-            // Autenticar usuário caso auth seja true
+            // Autenticar usuário, caso auth seja true
             if($authUser) {
                 $this->setTokenToSession($user->token);
             }
@@ -55,6 +55,25 @@
         }
 
         public function verifyToken($protected = false) {
+
+            if(!empty($_SESSION["token"])) {
+
+                //Pega o token da Session.
+                $token = $_SESSION["token"];
+
+                $user = $this->findByToken($token);
+
+                if($user) {
+                    return $user;
+
+                } else {
+                    //Redireciona usuário não autenticado.
+                    $this->message->setMessage("Faça a autenticação para acessar esta página.", "error", "index.php");
+                }
+
+            } else {
+                return false;
+            }
 
         }
 
@@ -102,6 +121,27 @@
         }
 
         public function findByToken($token) {
+
+            if($token != "") {
+
+                $stmt = $this->conn->prepare("SELECT * FROM users WHERE token = :token");
+
+                $stmt ->bindParam(":token", $token);
+
+                $stmt->execute();
+
+                if($stmt->rowCount() > 0) {
+
+                    $data = $stmt->fetch();
+                    $user = $this->buildUser($data);
+
+                } else {
+                    return false;
+                }
+
+            } else {
+                return false;
+            }
 
         }
 

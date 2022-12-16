@@ -66,13 +66,14 @@
                 if($user) {
                     return $user;
 
-                } else {
+                } else if($protected) {
                     //Redireciona usuário não autenticado.
                     $this->message->setMessage("Faça a autenticação para acessar esta página.", "error", "index.php");
                 }
 
-            } else {
-                return false;
+            } else if($protected) {
+                //Redireciona usuário não autenticado.
+                $this->message->setMessage("Faça a autenticação para acessar esta página.", "error", "index.php");
             }
 
         }
@@ -84,7 +85,7 @@
 
             if($redirect) {
                 //Redireciona para o perfil do usuário
-                $this->message->setMessage("Seja bem-vindo!", "sucess", "editprofile.php");
+                $this->message->setMessage("Seja bem-vindo!", "success", "editprofile.php");
             }
         }
 
@@ -147,6 +148,15 @@
                 return false;
             }
 
+        }
+
+        public function destroyToken() {
+
+            // Remove o token da session.
+            $_SESSION["token"] = "";
+
+            // Redirecionar e apresentar a mensagem de sucesso.
+            $this->message->setMessage("Logout efetuado com sucesso!", "success", "index.php");
         }
 
         public function changePassword(User $user) {

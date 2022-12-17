@@ -29,7 +29,7 @@ if($type === "register") {
         if($password === $confirmpassword) {
 
             // Verificar se o email já está cadastrado no sistema.
-            if($userDAO->findByEmail($email) === false) {
+            if($userDao->findByEmail($email) === false) {
 
                 $user = new User();
 
@@ -45,7 +45,7 @@ if($type === "register") {
 
                 $auth = true;
 
-                $userDAO->create($user, $auth);
+                $userDao->create($user, $auth);
 
             } else {
                 // Enviar uma mensagem de erro: Usuário já existe.

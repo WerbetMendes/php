@@ -109,11 +109,6 @@
     margin: 30px auto;
 }
 
-#login-container div,
-#register-container div {
-    margin: 20px 0;
-} 
-
 .card-btn {
     color: #000;
     background-color: #f5c518;
@@ -173,4 +168,8 @@
 
 #footer-links-container {
     margin: 30px 0;
+}
+
+#edit-form div {
+    margin: 20px 0;
 }

@@ -109,6 +109,15 @@
     margin: 30px auto;
 }
 
+/* Espaçamento das div's que não pegaram pelo Bootstrap */
+#login-container div,
+#register-container div,
+#edit-form div,
+#bio-form div,
+#change-form div {
+    margin-bottom: 20px;
+}
+
 .card-btn {
     color: #000;
     background-color: #f5c518;
@@ -121,6 +130,30 @@
     color: #f5c518;
     border-color: #f5c518;
 }
+
+/* Edit Profile */
+#profile-image-container {
+    width: 150px;
+    height: 150px;
+    border: 6px solid #f5c518;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 15px auto;
+}
+
+.page-description {
+    color: #999;
+}
+
+#bio {
+    max-width: 400px;
+}
+
+#change-password-container {
+    margin-top: 30px;
+}
+
 
 /* Footer */
 

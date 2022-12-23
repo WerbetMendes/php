@@ -64,7 +64,7 @@
                         </div>
                         <div class="form-group">
                             <label for="confirmpassword"><E-mail>Confirmação de Senha:</label>
-                            <input type="confirmpassword" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirme a sua nova senha">
+                            <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirme a sua nova senha">
                         </div>
                         <input type="submit" class="btn card-btn" value="Alterar Senha">
                     </form>

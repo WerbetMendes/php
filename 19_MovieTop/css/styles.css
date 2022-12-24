@@ -154,9 +154,35 @@
     margin-top: 30px;
 }
 
-
 .edit-profile-page .card-btn{
     width: auto;
+}
+
+/* New MOvie */
+
+.add-movie-form {
+    text-align: left;
+}
+
+.movie-image-container {
+    height: 400px;
+    min-width: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.page-title,
+.page-description {
+    text-align: center;
+}
+
+.page-title:after {
+    content: "";
+    width: 300px;
+    border-bottom: 2px solid #f5c518;
+    display: block;
+    margin: 0 auto;
+    padding-top: 7px;
 }
 
 /* Footer */
@@ -208,5 +234,9 @@
 }
 
 #edit-form div {
+    margin: 20px 0;
+}
+
+#add-movie-form div {
     margin: 20px 0;
 }

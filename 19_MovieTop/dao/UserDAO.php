@@ -76,7 +76,7 @@
                 //Redireciona para o perfil do usuário
                 $this->message->setMessage("Dados atualizados com sucesso!", "success", "editprofile.php");
             }
-
+            
 
         }
 

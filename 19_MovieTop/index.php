@@ -42,6 +42,6 @@
                 <p class="empty-list">Ainda não há filmes de comédia cadastrados!</p>
             <?php endif; ?>
     </div>
- <?php
+<?php
     include_once("templates/footer.php");
 ?>

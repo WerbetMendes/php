@@ -1,3 +1,4 @@
+
 /* Navbar */
 .navbar-brand {
     position: relative;
@@ -324,6 +325,10 @@
 .delete-btn:hover {
     background-color: transparent;
     color: #D53545;
+    text-decoration: none;
+}
+
+.table-movie-title {
     text-decoration: none;
 }
 

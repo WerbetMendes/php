@@ -187,7 +187,8 @@
 #register-container div,
 #edit-form div,
 #bio-form div,
-#change-form div {
+#change-form div,
+#reviews-container div {
     margin-bottom: 20px;
 }
 

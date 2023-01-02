@@ -241,6 +241,14 @@
     width: auto;
 }
 
+/* Profile */
+.profile-container {
+    justify-content: center;
+}
+
+
+
+
 /* New Movie */
 
 .add-movie-form {

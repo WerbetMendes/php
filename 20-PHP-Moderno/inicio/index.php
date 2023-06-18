@@ -18,6 +18,21 @@
             echo "Hoje é dia ". date("d/M/Y").".<br>";
             echo "E a hora atual é " . date("G:i:s T");
         ?>
+        <?php 
+            echo "<br>";
+            echo 20 < 10? "Deu True.<br>": "Deu false.";
+        ?>
+        <?php 
+            echo "<br>";
+            $casado = true;
+            print "O valor para casado é $casado";
+        ?>
+        <?php 
+        $nome = "Rodrigo";
+        $snom = "Nogueira";
+        echo "<br>";
+        echo "$nome \"Minotauro\" $snom";
+        ?>
         
     </h1>
 </body>

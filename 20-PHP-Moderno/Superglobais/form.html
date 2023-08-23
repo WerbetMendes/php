@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Superglobais</h1>
+        <!--Para usarmos o GET, inserimos um ponto de interrogação logo após o nome do arquivo PHP, seguido da instrução. -->
+        <form action="superglobais.php?aluno=Geyson&curso=Geografia" method="POST">
+            <label for="user" name="user">Usuário</label>
+            <input type="text" name="user" id="user">
+            <label for="pass" name="pass">Senha</label>
+            <input type="password" name="pass" id="pass">
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
